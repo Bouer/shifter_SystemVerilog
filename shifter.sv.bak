@@ -1,0 +1,14 @@
+module shifter( input logic [31:0] a,
+                output logic [31:0] y,
+                input logic [4:0] shamt5,
+                input logic [1:0] sh);
+	
+   always_comb
+      case(sh)
+        2'b00: y = a << shamt5;                       // LSL
+        2'b01: y = a >> shamt5;                       // LSR
+        2'b10: y = {{32{a[31]}}, a} >> shamt5;  // ASR  y = a >>> shamt5;
+        2'b11: y = {a, a} >> shamt5;                 // ROR
+      endcase
+
+endmodule

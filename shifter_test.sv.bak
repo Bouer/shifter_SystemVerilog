@@ -1,0 +1,23 @@
+module shifter ();
+
+	logic [31:0] a;  // señales de entrada
+	logic [4:0] shamt5; // directivas de corrimiento
+	logic [1:0] sh; // High select
+	wire [31:0] y, // Señales de salida
+	
+shifter sh1	(
+				 .a(a), 
+				 .shamt5(shamt5),
+				 .sh(sh),
+				 .y(y)
+				 );
+	
+initial 
+begin
+
+a = 2;
+shamt5 = 2;
+sh= 2
+
+end
+endmodule
