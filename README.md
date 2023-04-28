@@ -1,5 +1,7 @@
 # Ejemplo de shifter realizado en SystemVerilog
 
+### Shifter realizado en Quartus II para implementar en Altera FPGA Cyclone V y simulado en ModelSim-Altera
+
 [![SHIFTER.jpg](https://i.postimg.cc/NMkfHZ4W/SHIFTER.jpg)](https://postimg.cc/PpNjG304)
 
 Creamos un modulo para el shifter con las siguientes señales:
