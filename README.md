@@ -1,8 +1,6 @@
 # Ejemplo de shifter realizado en SystemVerilog
 
-
-
-
+[![SHIFTER.jpg](https://i.postimg.cc/NMkfHZ4W/SHIFTER.jpg)](https://postimg.cc/PpNjG304)
 
 Creamos un modulo para el shifter con las siguientes señales:
 
