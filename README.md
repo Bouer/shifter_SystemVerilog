@@ -21,7 +21,7 @@ always_comb
         2'b00: y = a << shamt5;                       // LSL - corrimiento logico a la derecha
         2'b01: y = a >> shamt5;                       // LSR - corrimiento logico a la izquierda
         2'b10: y = {{32{a[31]}}, a} >> shamt5;  // ASR  y = a >>> shamt5; - Corrimiento aritmetico a la derecha
-        2'b11: y = {a, a} >> shamt5;                 // ROR - 
+        2'b11: y = {a, a} >> shamt5;                 // ROR - Rotacion hacia derecha
       endcase
 endmodule
 		
@@ -36,7 +36,7 @@ endmodule
 00 - corrimiento logico a la derecha
 01 - corrimiento logico a la izquierda
 10 - Corrimiento aritmetico a la derecha
-11 - ROR - 
+11 - Rotacion hacia la derecha
 
 ```
 `timescale 1ns/10ps
